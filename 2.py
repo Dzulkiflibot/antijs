@@ -11,7 +11,7 @@ from bs4 import BeautifulSoup
 from googletrans import Translator
 import youtube_dl
 #=============
-cl = LineClient(authToken='Ey5KDbi1u1tMDOFc4ZWd.DamesEa1zSVJ91vMvuoe3q.FnD43WZ+wzCS1+G1GuXh+ChZCdz/InmPcL531/DQMQ8=')
+cl = LineClient(authToken='Ezy1P2KWh6JDzu4p0jee.Ht4W4Go6ssdWwuiCLTBe3G.ZjPA6LKJFSc+VrHRqVqyVpa5FURULiJ/w3VIYTAzozY=')
 cl.log("Auth Token : " + str(cl.authToken))
 channel = LineChannel(cl)
 cl.log("Channel Access Token : " + str(channel.channelAccessToken))
@@ -20,7 +20,7 @@ lineSettings = cl.getSettings()
 mid = cl.getProfile().mid
 responsename1 = cl.getProfile().displayName
 
-ki = LineClient(authToken='EyU30eqH0zueqvCV1Al3.5WL9Z/r/AAuWJPVOq6xCiW.0f5GHShvm+IWG78qwNyraidllhdFuOs/shWTcUQLpyE=')
+ki = LineClient(authToken='EzCRuCEhBbCghhglwiI6.45y/Ci8UpCOzp52/AJRqnG.fJ1jN3CCvKOT6QuuCQOoiiv7QtpjHYt0IC53knuoNAs=')
 ki.log("Auth Token : " + str(ki.authToken))
 channel1 = LineChannel(ki)
 ki.log("Channel Access Token : " + str(channel1.channelAccessToken))
@@ -29,7 +29,7 @@ lineSettings = ki.getSettings()
 Amid = ki.getProfile().mid
 responsename2 = ki.getProfile().displayName
 
-kk = LineClient(authToken='Ey1WCzixp4WSJDccfG9e.sIrUl5ta0Fb436r9pKH9tG.xBCEJqzc2t+TU1437yWv8BZVnoZlal9citdgwP9RZgU=')
+kk = LineClient(authToken='EzLMoymTeEYlabPaTff7.RdukmrGz0bUOwjU0xcNZfW.zy8KDoZ2JtIo65lP0WMkpE7N/zhldPoIKwCySVt3nb0=')
 kk.log("Auth Token : " + str(kk.authToken))
 channel2 = LineChannel(kk)
 kk.log("Channel Access Token : " + str(channel2.channelAccessToken))
@@ -38,7 +38,7 @@ lineSettings = kk.getSettings()
 Bmid = ki.getProfile().mid
 responsename3 = ki.getProfile().displayName
 
-kc = LineClient(authToken='Eyhb6arzezOVTiezo2M7.yTKlW6jBymuG7FQ7/nip9W.3YhQOGMGZpi6Wmi2b2T/JGQz9IalSIaXDQr7a02WTi0=')
+kc = LineClient(authToken='EzMCLU69iw636kV9Z247.GaAFSWA3akXzHRaCm5Kt1W.QCQRoAEVKlo0k5eldF3TCGRiDL3JYOXfMIvpWYuZEAc=')
 kc.log("Auth Token : " + str(kc.authToken))
 channel3 = LineChannel(kc)
 kc.log("Channel Access Token : " + str(channel3.channelAccessToken))
@@ -47,7 +47,7 @@ lineSettings = kc.getSettings()
 Cmid = kc.getProfile().mid
 responsename4 = kc.getProfile().displayName
 
-km = LineClient(authToken='EyvNd4hk41MR0ROBpgyd.8wWb5A7Haxv9wrAeLvS4Rq.Hsgaq531dB5FT9ws+QavC5NXYQMR8lQln3v6bBnNwxs=')
+km = LineClient(authToken='EzjY1I2XjoOntf3SEPK6.IGGRJ+9hdIq/qKjEqs3nHG.A4L7i97i4VzBWws8N5EDh73v72vtPYg682cq/cmdTuE=')
 km.log("Auth Token : " + str(km.authToken))
 channel4 = LineChannel(km)
 km.log("Channel Access Token : " + str(channel4.channelAccessToken))
@@ -56,7 +56,7 @@ lineSettings = km.getSettings()
 Dmid = km.getProfile().mid
 responsename5 = km.getProfile().displayName
 
-kb = LineClient(authToken='Ey3mgjRCnWgKVY9qbJ34.2sXvMwCq2IhFZno24a0j1a.7icislThczQvHI2F08xLltT1XB05xy7FTjyJAbAcy5Y=')
+kb = LineClient(authToken='EzQUxKRfh3JipFC1tLMc.miBOQWlX99pkuzQZathJha.PxcucoBNVM+MomN6xGHg0a2a4HGJ0u/JZpfqjE1pahs=')
 kb.log("Auth Token : " + str(kb.authToken))
 channel5 = LineChannel(kb)
 kb.log("Channel Access Token : " + str(channel5.channelAccessToken))
@@ -65,7 +65,7 @@ lineSettings = kb.getSettings()
 Emid = kb.getProfile().mid
 responsename6 = kb.getProfile().displayName
 
-sw = LineClient(authToken='EyUbEIzBAbadeWyUe9e1.oiTlu0mx+5yts/D69Dv8Sq.YhmbnmUdmTQlXOm7LtU++LK85+Yc28gE8ickx++BKiA=')
+sw = LineClient(authToken='EzillRdY28hUWabkB8Cd.ZXDaCaCxbehr+Lt7trTy7q.LKRj1OK8qVMR5tSTab7+mYSzlyaxqPMTfuEXkuDYDqs=')
 sw.log("Auth Token : " + str(sw.authToken))
 channel6 = LineChannel(sw)
 sw.log("Channel Access Token : " + str(channel6.channelAccessToken))
@@ -197,8 +197,8 @@ wait = {
             },
     "limit":5,
     "unsend":False,
-    "mention":"Hallo kak...! Lagi Stalking yaa...",
-    "Respontag":"Nah Loe tag2 gw...! Cipok tar nih... ",
+    "mention":"Ngintip aja nih...",
+    "Respontag":"Apaan sih... ",
     "welcome":"Welcome...",
     "leave":"See you next againt later...",
     "comment":"Super Like ",
@@ -1454,7 +1454,7 @@ def bot(op):
                         if mention ['M'] in admin:
                            saints = cl.getContact(msg._from)
                            sendMention(msg.to, saints.mid, "", wait["Respontag"])
-                           cl.sendMessage(msg.to, None, contentMetadata={"PRDID":"a0768339-c2d3-4189-9653-2909e9bb6f58","PRDTYPE":"THEME","MSGTPL":"6"}, contentType=9)
+                          # cl.sendMessage(msg.to, None, contentMetadata={"PRDID":"a0768339-c2d3-4189-9653-2909e9bb6f58","PRDTYPE":"THEME","MSGTPL":"6"}, contentType=9)
                            break
                if 'MENTION' in msg.contentMetadata.keys() != None:
                 if msg._from not in Bots:
@@ -2029,7 +2029,7 @@ def bot(op):
                                sendMention(msg.to, sender, "「 User Selfbot 」\n", "")
                                msg.contentType = 13
                                msg.contentMetadata = {'mid': mid}
-                               #cl.sendMessage1(msg)
+                               cl.sendMessage1(msg)
 
                         elif text.lower() == "mid":
                                cl.sendMessage(msg.to, msg._from)
