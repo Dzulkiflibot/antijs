@@ -47,7 +47,7 @@ lineSettings = kc.getSettings()
 Cmid = kc.getProfile().mid
 responsename4 = kc.getProfile().displayName
 
-km = LineClient(authToken='Ez1PHxhicgh2BboXAb96.45y/Ci8UpCOzp52/AJRqnG.OKFFCcvO0PkIVEKCUp4IDZdJWrWGZaqYyvA5kKwFckY=)
+km = LineClient(authToken='EzzrfAB9y0wXx4b9OwE6.IGGRJ+9hdIq/qKjEqs3nHG.4rGzTs13bfTYxYKzjOmKpLT0XT5m2tRFDXCL58OKtGk=')
 km.log("Auth Token : " + str(km.authToken))
 channel4 = LineChannel(km)
 km.log("Channel Access Token : " + str(channel4.channelAccessToken))
@@ -94,7 +94,7 @@ responsename9 = kw.getProfile().displayName
 
 ke = LineClient(authToken='Ezbfyc9cJqlrJUqZhfc6.GVulGnhLWCSAtrCy4J/C9G.gFvwkkwHyGlyOhsQj74TosmWbhkNxDxrr4/NBVxPu7Y=')
 ke.log("Auth Token : " + str(ke.authToken))
-channel9 = LineChannel(kb)
+channel9 = LineChannel(ke)
 ke.log("Channel Access Token : " + str(channel9.channelAccessToken))
 lineProfile = ke.getProfile()
 lineSettings = ke.getSettings()
@@ -104,7 +104,7 @@ responsename10 = ke.getProfile().displayName
 ky = LineClient(authToken='EzaXxxFYZR88qR7Kvrp8.vtxcXjNYTV0ZauNdncAiga.pbR9Eyi+ttpwrq3AHnnuF7jjjMloTMjAohuBnnDP6uE=')
 ky.log("Auth Token : " + str(ky.authToken))
 channel10 = LineChannel(ky)
-ky.log("Channel Access Token : " + str(channel10=.channelAccessToken))
+ky.log("Channel Access Token : " + str(channel10.channelAccessToken))
 lineProfile = ky.getProfile()
 lineSettings = ky.getSettings()
 Jmid = ky.getProfile().mid
@@ -131,7 +131,7 @@ Bmid = kk.getProfile().mid
 Cmid = kc.getProfile().mid
 Dmid = km.getProfile().mid
 Emid = kb.getProfile().mid
-Fmid = sn.getProfile().mid
+Fmid = kn.getProfile().mid
 Gmid = ko.getProfile().mid
 Hmid = kw.getProfile().mid
 Imid = ke.getProfile().mid
@@ -511,8 +511,83 @@ def sendMention5(to, mid, firstmessage, lastmessage):
         kb.sendMessage(to, text, {'MENTION': str('{"MENTIONEES":' + json.dumps(arr) + '}')}, 0)
     except Exception as error:
         cl.sendMessage(to, "[ INFO ] Error :\n" + str(error))
-
+        
 def sendMention6(to, mid, firstmessage, lastmessage):
+    try:
+        arrData = ""
+        text = "%s " %(str(firstmessage))
+        arr = []
+        mention = "@x "
+        slen = str(len(text))
+        elen = str(len(text) + len(mention) - 1)
+        arrData = {'S':slen, 'E':elen, 'M':mid}
+        arr.append(arrData)
+        text += mention + str(lastmessage)
+        kn.sendMessage(to, text, {'MENTION': str('{"MENTIONEES":' + json.dumps(arr) + '}')}, 0)
+    except Exception as error:
+        cl.sendMessage(to, "[ INFO ] Error :\n" + str(error))
+
+def sendMention7(to, mid, firstmessage, lastmessage):
+    try:
+        arrData = ""
+        text = "%s " %(str(firstmessage))
+        arr = []
+        mention = "@x "
+        slen = str(len(text))
+        elen = str(len(text) + len(mention) - 1)
+        arrData = {'S':slen, 'E':elen, 'M':mid}
+        arr.append(arrData)
+        text += mention + str(lastmessage)
+        ko.sendMessage(to, text, {'MENTION': str('{"MENTIONEES":' + json.dumps(arr) + '}')}, 0)
+    except Exception as error:
+        cl.sendMessage(to, "[ INFO ] Error :\n" + str(error))
+
+def sendMention8(to, mid, firstmessage, lastmessage):
+    try:
+        arrData = ""
+        text = "%s " %(str(firstmessage))
+        arr = []
+        mention = "@x "
+        slen = str(len(text))
+        elen = str(len(text) + len(mention) - 1)
+        arrData = {'S':slen, 'E':elen, 'M':mid}
+        arr.append(arrData)
+        text += mention + str(lastmessage)
+        kw.sendMessage(to, text, {'MENTION': str('{"MENTIONEES":' + json.dumps(arr) + '}')}, 0)
+    except Exception as error:
+        cl.sendMessage(to, "[ INFO ] Error :\n" + str(error))
+
+def sendMention9(to, mid, firstmessage, lastmessage):
+    try:
+        arrData = ""
+        text = "%s " %(str(firstmessage))
+        arr = []
+        mention = "@x "
+        slen = str(len(text))
+        elen = str(len(text) + len(mention) - 1)
+        arrData = {'S':slen, 'E':elen, 'M':mid}
+        arr.append(arrData)
+        text += mention + str(lastmessage)
+        ke.sendMessage(to, text, {'MENTION': str('{"MENTIONEES":' + json.dumps(arr) + '}')}, 0)
+    except Exception as error:
+        cl.sendMessage(to, "[ INFO ] Error :\n" + str(error))
+
+def sendMention10(to, mid, firstmessage, lastmessage):
+    try:
+        arrData = ""
+        text = "%s " %(str(firstmessage))
+        arr = []
+        mention = "@x "
+        slen = str(len(text))
+        elen = str(len(text) + len(mention) - 1)
+        arrData = {'S':slen, 'E':elen, 'M':mid}
+        arr.append(arrData)
+        text += mention + str(lastmessage)
+        ky.sendMessage(to, text, {'MENTION': str('{"MENTIONEES":' + json.dumps(arr) + '}')}, 0)
+    except Exception as error:
+        cl.sendMessage(to, "[ INFO ] Error :\n" + str(error))
+
+def sendMention11(to, mid, firstmessage, lastmessage):
     try:
         arrData = ""
         text = "%s " %(str(firstmessage))
@@ -704,7 +779,7 @@ def help():
                   "║☯➸ " + key + "Listbot\n" + \
                   "║☯➸ " + key + "Listadmin\n" + \
                   "║☯➸ " + key + "Listprotect\n" + \
-                  "╚══[     вoтaĸ вoт      ]\n" + \
+                  "╚══[     FI FAMZ BOTZ      ]\n" + \
                   "▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬\n" + \
                   "\nKetik「 Refresh 」jika sudah\nmenggunakan command diatas...\n"
     return helpMessage
@@ -753,7 +828,7 @@ def helpbot():
                   "║☯➸ " + key + "Bot5up「Kirim fotonya」\n" + \
                   "║☯➸ " + key + "Gift:「Mid korban」「Jumlah」\n" + \
                   "║☯➸ " + key + "Spam:「Mid korban」「Jumlah」\n" + \
-                  "╚══[     вoтaĸ вoт      ]\n" + \
+                  "╚══[     fi famz bot      ]\n" + \
                   "▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬\n" + \
                   "\nKetik「 Refresh 」jika sudah\nmenggunakan command diatas...\n"
     return helpMessage1
@@ -832,19 +907,19 @@ def bot(op):
                                                 sw.acceptGroupInvitationByTicket(op.param1,Ticket)
                                                 sw.kickoutFromGroup(op.param1,[op.param2])
                                                 kb.updateGroup(X)
-                                 except:
-                                     try:
-                                         if kb.getGroup(op.param1).preventedJoinByTicket == False:
-                                             if op.param2 not in Bots and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
-                                                 kb.reissueGroupTicket(op.param1)
-                                                 X = kb.getGroup(op.param1)
-                                                 X.preventedJoinByTicket = True
-                                                 Ticket = kb.reissueGroupTicket(op.param1)
-                                                 sw.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                 sw.kickoutFromGroup(op.param1,[op.param2])
-                                                 kb.updateGroup(X)
                                     except:
-                                        pass
+                                        try:
+                                            if kb.getGroup(op.param1).preventedJoinByTicket == False:
+                                                if op.param2 not in Bots and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
+                                                    kb.reissueGroupTicket(op.param1)
+                                                    X = kb.getGroup(op.param1)
+                                                    X.preventedJoinByTicket = True
+                                                    Ticket = kb.reissueGroupTicket(op.param1)
+                                                    sw.acceptGroupInvitationByTicket(op.param1,Ticket)
+                                                    sw.kickoutFromGroup(op.param1,[op.param2])
+                                                    kb.updateGroup(X)
+                                        except:
+                                            pass
 
         if op.type == 13:
             if mid in op.param3:
@@ -1775,7 +1850,7 @@ def bot(op):
                         siderMembers(op.param1, [op.param2])
                         sider = cl.getContact(op.param2).picturePath
                         image = 'http://dl.profile.line.naver.jp'+sider
-                        cl.sendImageWithURL(op.param1, image)
+                        #cl.sendImageWithURL(op.param1, image)
 
         if op.type == 26:
            if wait["selfbot"] == True:
@@ -2490,6 +2565,21 @@ def bot(op):
                                msg.contentMetadata = {'mid': Emid}
                                cl.sendMessage1(msg)
                                msg.contentType = 13
+                               msg.contentMetadata = {'mid': Fmid}
+                               cl.sendMessage1(msg)
+                               msg.contentType = 13
+                               msg.contentMetadata = {'mid': Gmid}
+                               cl.sendMessage1(msg)
+                               msg.contentType = 13
+                               msg.contentMetadata = {'mid': Hmid}
+                               cl.sendMessage1(msg)
+                               msg.contentType = 13
+                               msg.contentMetadata = {'mid': Imid}
+                               cl.sendMessage1(msg)
+                               msg.contentType = 13
+                               msg.contentMetadata = {'mid': Jmid}
+                               cl.sendMessage1(msg)
+                               msg.contentType = 13
                                msg.contentMetadata = {'mid': Zmid}
                                cl.sendMessage1(msg)
 
@@ -2522,6 +2612,11 @@ def bot(op):
                                    kc.removeAllMessages(op.param2)
                                    km.removeAllMessages(op.param2)
                                    kb.removeAllMessages(op.param2)
+                                   kn.removeAllMessages(op.param2)
+                                   ko.removeAllMessages(op.param2)
+                                   kw.removeAllMessages(op.param2)
+                                   ke.removeAllMessages(op.param2)
+                                   ky.removeAllMessages(op.param2)
                                    cl.sendText(msg.to,"Chat dibersihkan...")
                                except:
                                    pass
